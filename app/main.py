@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from app.routes.auth import auth_router
-from app.routes.home import home_router
+from app.routes.dashboard import home_router
 from app.routes.predict import predict_router 
 
 app = FastAPI()
