@@ -8,6 +8,6 @@ class setting():
     DATABASE = os.getenv("DATABASE_URL")
     ALGORITHM = os.getenv("ALGORITHM")
     SECRET_KEY = os.getenv("SECRET_KEY")
-    TIME_TOKEN_EXPIRE = os.getenv("TIME_TOKEN_EXPIRE")
+    TIME_TOKEN_EXPIRE = os.getenv(int("TIME_TOKEN_EXPIRE"))
 
 setting = setting()
