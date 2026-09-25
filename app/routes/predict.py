@@ -13,4 +13,7 @@ prediction_router = APIRouter()
 
 @prediction_router.post("/prediction")
 def prediction(user : PredictionCreate , current_user = Depends(get_current_user) , db:Session = Depends(get_db)):
+    Square_Footage = input("Entre you Square_Footage : ")
+    Num_Bedrooms = input("Entre you Num_Bedrooms: ")
+    Num_Bathrooms = input("Entre you Num_Bedrooms: ")
     
