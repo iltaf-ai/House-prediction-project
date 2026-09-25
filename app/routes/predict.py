@@ -25,6 +25,7 @@ def prediction(
         user.Lot_Size,
         user.Garage_Size,
         user.Neighborhood_Quality
+        
     ]]
 
     predicted_price = Pipeline_model.predict(new_input)[0]
